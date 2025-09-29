@@ -1,0 +1,62 @@
+.table {
+    display: flex;
+    align-items: center;
+    background: #f6f6f6;
+    cursor: grab;
+    position: relative;
+}
+
+.tab {
+    color: #555454;
+    padding: 6px 12px;
+    background: #e0e0e0;
+    border: 1px solid #c0c0c0;
+    cursor: pointer;
+    transition: background 0.2s;
+    min-width: 100px;
+    min-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+
+}
+
+.tab:hover {
+    background: #d6d6d6;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdownBtn {
+    padding: 6px 12px;
+    cursor: pointer;
+    border: 1px solid #c0c0c0;
+    background: #e0e0e0;
+
+}
+
+.dropdownContent {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background: white;
+    border: 1px solid #c0c0c0;
+    z-index: 10;
+    flex-direction: column;
+    min-width: 150px;
+    max-width: 300px;
+    overflow-x: auto;
+}
+
+.dropdown:hover .dropdownContent {
+    display: flex;
+    flex-direction: column;
+}
+
