@@ -77,7 +77,7 @@ const Tabs = () => {
             )
         );
     };
-    //add y
+    //add
 
     const dragStartHandler = (e, value) => setCurrentCard(value);
     const dragLeaveHandler = () => {};
